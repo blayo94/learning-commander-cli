@@ -20,7 +20,32 @@ program
 //     if( options.key == undefined ){
 //       console.log();
 //       // console.log('  -k, --key option is required');
-      
+
+program
+.command('websites')
+ .description('List the different type of music websites') 
+
+//   .option('-k, --key <string>', 'String|phrase Key to Use')
+.action(function (password, options) {
+  console.log("")
+  console.log(colors.yellow('   Extra Help Text'));
+  console.log("") 
+
+
+ });
+
+ program
+ .command('lakers <password>')
+  .description('List the lakers starting 5') 
+
+//   .option('-k, --key <string>', 'String|phrase Key to Use')
+ .action(function (password, options) {
+   console.log("")
+   console.log(colors.yellow('   Extra Help Text'));
+   console.log("") 
+
+
+  });
 //       console.log('  ');
 //       process.exit(1);
 //     } else {
